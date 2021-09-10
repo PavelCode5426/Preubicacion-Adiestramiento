@@ -1,0 +1,67 @@
+
+.tree-table-view .column-header-background{
+	-fx-border-width:0 0.0 1 0;
+	-fx-border-color: black;
+	-fx-background-color: #065325
+}
+
+.tree-table-view .tree-table-cell{
+	-fx-border-width:0 0 0 0;
+}
+.tree-table-view .tree-table-cell {
+	-fx-alignment: center;
+}
+
+.tree-table-view .column-overlay{
+	-fx-background-color:Green;
+}
+
+.tree-table-view:focused .tree-table-row-cell:hover .tree-table-cell{
+	-fx-text-fill: white;
+	-fx-font-size: 15px;
+	-fx-background-color: #065325
+}
+
+.tree-table-view .column-header .label{
+	-fx-text-fill:#FFFFFF;
+	-fx-font-size: 13px;
+	-fx-font-family: Arial;
+}
+
+
+.jfx-tree-table-view:focused .tree-table-row-cell:selected .tree-table-cell {
+	-fx-text-fill: white;
+	-fx-background-color: limegreen;
+}
+
+
+.jfx-tree-table-view .column-header .arrow,
+.jfx-tree-table-view .column-header .sort-order-dot {
+	-fx-background-color: white;
+}
+
+.jfx-tree-table-view .scroll-bar:vertical >.track-background, .jfx-tree-table-view .scroll-bar:horizontal >.track-background
+{
+	-fx-background-color:transparent;
+}
+
+.jfx-tree-table-view .scroll-bar .increment-button, .jfx-tree-table-view .scroll-bar .decrement-button{
+	-fx-background-color: transparent;
+	-fx-background-radius: 10px;
+	-fx-pref-height: 15px;
+	-fx-pref-width: 15px;
+}
+.jfx-tree-table-view .scroll-bar .increment-button .increment-arrow, .jfx-tree-table-view .scroll-bar .decrement-button .decrement-arrow{
+	-fx-background-color: transparent;
+
+}
+.jfx-tree-table-view .scroll-bar:horizontal .thumb, .jfx-tree-table-view .scroll-bar:vertical .thumb{
+	-fx-background-color: gray;
+	-fx-background-radius: 15px;
+}
+.jfx-tree-table-view .scroll-bar{
+	-fx-background-color: transparent;
+}
+
+
+

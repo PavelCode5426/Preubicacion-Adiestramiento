@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jasperreports-extensions-1.3.1"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/AnimateFX-1.2.0.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/commons-beanutils-1.7.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/commons-collections-2.1.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/commons-digester-1.7.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/commons-logging-1.0.2.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/controlsfx-8.40.15.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/iReport.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/itext-1.3.1.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/jasperreports-4.0.2.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/jasperreports-extensions-1.3.1.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/jfoenix-8.0.8.jar"/>
+	<classpathentry kind="lib" path="F:/Mis Cosas/Escritorio/Librerias/postgresql-9.0-801.jdbc4.jar"/>
+	<classpathentry kind="output" path="out/production/ProyectoBD_V4"/>
+</classpath>

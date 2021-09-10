@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PaneExterior" style="-fx-background-radius: 25px;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.Pantalla_Jefe_Area_Controller">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="789.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/Entrada_Principal_de_la_CUJAE_Photoshop-Recuperado.png" />
+         </image>
+      </ImageView>
+      <BorderPane layoutY="41.0" prefHeight="459.0" prefWidth="789.0">
+         <center>
+            <JFXTabPane prefHeight="469.0" prefWidth="784.0">
+               <tabs>
+                  <Tab fx:id="tab_PlanAdiestram" text="Plan de Adiestramiento">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <VBox alignment="CENTER" layoutX="13.0" layoutY="32.0" prefHeight="363.0" prefWidth="762.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="14.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="268.0" text="Graduados en Adiestramiento" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="buscar_a" labelFloat="true" promptText="Buscar Estudiante">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="580.0" right="15.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTreeTableView fx:id="tabla_adiestramiento" prefHeight="322.0" prefWidth="726.0">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                                       </VBox.margin>
+                                       <columns>
+                                          <TreeTableColumn fx:id="colum_nombre_a" prefWidth="75.0" text="Nombre y Apellidos" />
+                                          <TreeTableColumn fx:id="colum_carnet_a" prefWidth="75.0" text="Carnet" />
+                                          <TreeTableColumn fx:id="column_esp_a" editable="true" prefWidth="75.0" text="Especialidad" />
+                                          <TreeTableColumn fx:id="colum_lugar_a" prefWidth="75.0" text="Lugar de Procedencia" />
+                                          <TreeTableColumn fx:id="colum_estado_a" prefWidth="75.0" text="Estado" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </JFXTreeTableView>
+                                    <JFXButton fx:id="review_plan_adiestramiento" buttonType="RAISED" contentDisplay="RIGHT" disable="true" prefHeight="30.0" prefWidth="137.0" text="Revisar plan" textFill="#fcfafa">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0">
+                                             <image>
+                                                <Image url="@Imagenes/Edit_50px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab_AsistenciaPlanFam" text="Plan de Familiarizacion">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <VBox alignment="CENTER" layoutX="10.0" layoutY="25.0" prefHeight="356.0" prefWidth="771.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="257.0" text="Asistencia de los Estudiantes" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="buscar_f" labelFloat="true" prefHeight="25.0" prefWidth="99.0" promptText="Buscar Estudiante">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="580.0" right="15.0" top="5.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTreeTableView fx:id="tabla_familiarizacion" prefHeight="312.0" prefWidth="935.0">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                                       </VBox.margin>
+                                       <columns>
+                                          <TreeTableColumn fx:id="colum_nombre_f" prefWidth="75.0" text="Nombre y Apellidos" />
+                                          <TreeTableColumn fx:id="colum_canet_f" prefWidth="75.0" text="Carnet" />
+                                          <TreeTableColumn fx:id="colum_especialidad_f" prefWidth="75.0" text="Especialidad" />
+                                          <TreeTableColumn fx:id="colum_lugar_f" prefWidth="170.0" text="Lugar de Procedencia" />
+                                          <TreeTableColumn fx:id="colum_porciento_f" prefWidth="129.0" text="\% de Inasistencia" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </JFXTreeTableView>
+                                    <JFXButton fx:id="asis_eval_plan" buttonType="RAISED" contentDisplay="RIGHT" disable="true" prefHeight="29.0" prefWidth="350.0" text="Asistencia y Evaluacion de Plan de Familiarización" textFill="#fcfafa">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0">
+                                             <image>
+                                                <Image url="@Imagenes/Edit_50px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </center>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Perfil">
+                     <items>
+                        <MenuItem fx:id="mi_perfil" mnemonicParsing="false" text="Mi Perfil">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0">
+                                 <image>
+                                    <Image url="@Imagenes/Male%20User_50px-1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                        <MenuItem fx:id="notfmf" mnemonicParsing="false" text="Mostrar Notificaciones">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0">
+                                 <image>
+                                    <Image url="@Imagenes/Notification_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@Imagenes/Profile_White_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Reportes">
+                     <items>
+                        <MenuItem fx:id="menuItem_ReporteTesisAp" mnemonicParsing="false" text="Estudiantes con tesis aplicable a la CUJAE" />
+                        <MenuItem fx:id="menu_Reporte_EstXEspec" mnemonicParsing="false" text="Graduados por especialidad" />
+                        <MenuItem fx:id="menu_Reporte_EstXProc" mnemonicParsing="false" text="Graduados por procedencia" />
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@Imagenes/Report%20Card_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Ayuda">
+                     <items>
+                        <MenuItem fx:id="menu_Ayuda" mnemonicParsing="false" text="Ayuda" />
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@Imagenes/Help_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <stylesheets>
+            <URL value="@CSS/button.css" />
+            <URL value="@CSS/menuBar.css" />
+            <URL value="@CSS/tabPane.css" />
+            <URL value="@CSS/treeTableView.css" />
+            <URL value="@CSS/textField.css" />
+         </stylesheets>
+      </BorderPane>
+      <AnchorPane fx:id="paneTitulo" maxHeight="64.0" minHeight="40.0" prefHeight="41.0" prefWidth="789.0" style="-fx-background-color: #065325; -fx-background-radius: 25 25 0 0;">
+         <children>
+            <Label layoutX="317.0" layoutY="1.0" maxHeight="49.0" prefHeight="43.0" prefWidth="345.0" text="Jefe de área" textFill="WHITE" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="317.0" AnchorPane.topAnchor="1.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="hbox" layoutX="646.0" maxHeight="48.0" prefHeight="33.0" prefWidth="128.0">
+               <children>
+                  <JFXButton fx:id="botonMinimizarVentana" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="14.0" layoutY="5.0" prefHeight="33.0" prefWidth="30.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Horizontal Line_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" disable="true" graphicTextGap="0.0" layoutX="51.0" layoutY="5.0" prefHeight="33.0" prefWidth="19.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Square_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="botonCerrarVentana" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="92.0" layoutY="5.0" prefHeight="33.0" prefWidth="10.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Delete_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

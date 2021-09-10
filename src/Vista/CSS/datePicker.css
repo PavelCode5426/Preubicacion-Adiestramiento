@@ -1,0 +1,21 @@
+.date-picker > .arrow-button .arrow
+{
+    -fx-background-color:  white;
+    -fx-border-color: white;
+    -fx-background-size: 60% 60%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center ;
+
+}
+.jfx-date-picker .text-field {
+    -fx-focus-color: white;
+}
+
+.date-picker-popup > * > .date-picker-list-view > .virtual-flow > .clipped-container > .sheet > .data-picker-list-cell:hover {
+    -fx-background-color: #065325;
+    -fx-text-fill: gray;
+    -fx-font-size: 18px;
+}
+.date-picker{
+    -jfx-default-color: #065325;
+}

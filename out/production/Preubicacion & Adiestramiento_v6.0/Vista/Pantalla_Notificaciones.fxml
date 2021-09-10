@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="PaneExterior" style="-fx-background-radius: 25px;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #065325; -fx-background-radius: 25px;" stylesheets="@CSS/button.css">
+         <children>
+            <HBox>
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pantalla Notificaciones">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXButton fx:id="botonCerrarVentana" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="33.0" prefWidth="10.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Delete_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="145.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="309.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <ScrollPane layoutX="23.0" layoutY="1.0" prefHeight="298.0" prefWidth="535.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;" stylesheets="@CSS/scrollBar.css">
+                     <content>
+                        <VBox fx:id="panel_Noti" alignment="CENTER" layoutX="5.0" layoutY="5.0" prefHeight="294.0" prefWidth="533.0" spacing="15.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </VBox>
+                     </content>
+                     <effect>
+                        <DropShadow radius="21.12" width="65.48" />
+                     </effect>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <HBox alignment="TOP_RIGHT" spacing="10.0">
+               <children>
+                  <JFXButton fx:id="enviar" buttonType="RAISED" contentDisplay="RIGHT" layoutX="320.0" layoutY="10.0" prefHeight="31.0" prefWidth="161.0" style="-fx-border-color: white; -fx-border-radius: 15px;" text="Enviar Notificación" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="100.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Enviar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="selc_btn" buttonType="RAISED" contentDisplay="RIGHT" prefHeight="31.0" prefWidth="160.0" style="-fx-border-color: white; -fx-border-radius: 15px;" text="Seleccionar Todo" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Check%20All_flaco.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="del_btn" buttonType="RAISED" contentDisplay="RIGHT" prefWidth="100.0" style="-fx-border-color: white; -fx-border-radius: 15px;" text="Borrar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Eraser_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

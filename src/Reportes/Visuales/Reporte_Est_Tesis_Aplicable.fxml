@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panel" prefHeight="554.0" prefWidth="760.0" style="-fx-background-radius: 25px; -fx-border-color: white; -fx-border-radius: 25px;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Reportes.Controladoras.Reporte_Est_Tesis_Aplicable_Controller">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-2.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="773.0" style="-fx-background-radius: 25px;" stylesheets="@../../Vista/CSS/treeTableView.css">
+         <children>
+            <VBox style="-fx-background-radius: 25 25 0 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="paneTitulo" maxHeight="64.0" minHeight="37.0" prefHeight="37.0" prefWidth="783.0" style="-fx-background-color: #065325; -fx-background-radius: 25 25 0 0;">
+                     <children>
+                        <Label layoutX="188.0" layoutY="12.0" maxHeight="28.0" text="Estudiantes con tesis aplicable a la CUJAE" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="188.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane fx:id="hbox" layoutX="620.0" layoutY="4.0" maxHeight="48.0" prefHeight="29.0" prefWidth="128.0">
+                           <children>
+                              <JFXButton fx:id="botonCerrarVentana" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="92.0" prefHeight="33.0" prefWidth="10.0">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Vista/Imagenes/Delete_50px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="paneArriba" maxHeight="53.0" prefHeight="40.0" prefWidth="783.0" style="-fx-background-color: #065325; -fx-border-color: white;">
+                     <children>
+                        <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="738.0" AnchorPane.topAnchor="7.0">
+                           <image>
+                              <Image url="@../../Vista/Imagenes/View_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="button_Imprimir" layoutX="43.0" layoutY="10.0" maxHeight="18.0" prefHeight="18.0" prefWidth="128.0" text="Ver documento" textFill="WHITE" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="602.0">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <AnchorPane fx:id="paneAbajo" layoutY="92.0" prefHeight="467.0" prefWidth="772.0" style="-fx-background-radius: 25px;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="92.0">
+               <children>
+                  <ImageView fitHeight="504.0" fitWidth="774.0" layoutY="-16.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="-16.0">
+                     <image>
+                        <Image url="@../../Vista/Imagenes/Entrada_Principal_de_la_CUJAE_Photoshop-Recuperado.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="12.0" layoutY="27.0" prefHeight="448.0" prefWidth="750.0" style="-fx-background-radius: 15px; -fx-background-color: #ffffff4e;" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="26.0">
+                     <children>
+                        <JFXComboBox fx:id="comboBox_FiltrarBusq" focusColor="WHITE" labelFloat="true" layoutX="283.0" layoutY="15.0" promptText="Filtrar búsqueda por :" unFocusColor="WHITE" />
+                        <JFXTextField fx:id="textField_Buscar" focusColor="WHITE" layoutX="39.0" layoutY="14.0" promptText="Buscar :" style="-fx-background-radius: 10px;" stylesheets="@CSS/textField.css" unFocusColor="#065325" AnchorPane.rightAnchor="540.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <ImageView fitHeight="18.0" fitWidth="21.0" layoutX="194.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="540.0">
+                           <image>
+                              <Image url="@../../Vista/Imagenes/Search_50px.png" />
+                           </image>
+                        </ImageView>
+                        <JFXTreeTableView fx:id="table" layoutX="26.0" layoutY="60.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="60.0">
+                           <columns>
+                              <TreeTableColumn fx:id="columna_nombre" maxWidth="163.0" prefWidth="162.0" text="Nombre y apellidos" />
+                              <TreeTableColumn fx:id="columna_carnet" minWidth="0.0" prefWidth="101.0" text="No.Identidad" />
+                              <TreeTableColumn fx:id="columna_temaTesis" prefWidth="147.0" text="Tema de Tesis" />
+                              <TreeTableColumn fx:id="columna_Lugar" prefWidth="163.0" text="Lugar de Procedencia" />
+                              <TreeTableColumn fx:id="columna_Especialidad" prefWidth="124.0" text="Especialidad" />
+                           </columns>
+                        </JFXTreeTableView>
+                        <JFXButton fx:id="button_Salir" buttonType="RAISED" layoutX="609.0" layoutY="407.0" maxHeight="33.0" maxWidth="91.0" prefHeight="33.0" prefWidth="91.0" style="-fx-background-color: #065325; -fx-background-radius: 15px;" text=" Salir" textFill="WHITE" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="52.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Vista/Imagenes/Exit_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../Vista/CSS/comboBox.css" />
+      <URL value="@../../Vista/CSS/textField.css" />
+   </stylesheets>
+</AnchorPane>

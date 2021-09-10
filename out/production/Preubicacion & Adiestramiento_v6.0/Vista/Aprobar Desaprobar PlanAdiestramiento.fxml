@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PaneExterior" prefHeight="519.0" prefWidth="689.0" style="-fx-background-radius: 25px;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.Aprobar_Desaprobar_PA_Controller">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="783.0" layoutY="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/Entrada_Principal_de_la_CUJAE_Photoshop-Recuperado.png" />
+         </image>
+      </ImageView>
+      <BorderPane layoutY="44.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="758.0" style="-fx-border-color: white; -fx-border-radius: 0 0 25 25;">
+         <center>
+            <JFXTabPane fx:id="tabPane" BorderPane.alignment="CENTER">
+               <tabs>
+                  <Tab fx:id="pane" text="Primera Etapa">
+                    <content>
+                        <AnchorPane>
+                           <children>
+                              <VBox layoutY="45.0" prefHeight="339.0" prefWidth="756.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                 <children>
+                                    <Label fx:id="obj" prefHeight="27.0" prefWidth="1009.0" text="Objetivo de la Etapa :   " textFill="WHITE" wrapText="true">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="ini" layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="1078.0" text="Fecha de Inicio :   " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="end" layoutX="10.0" layoutY="27.0" prefHeight="20.0" prefWidth="1121.0" text="Fecha de Fin :   " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTreeTableView fx:id="table" prefHeight="204.0" prefWidth="716.0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <columns>
+                                          <TreeTableColumn fx:id="tarea" prefWidth="547.0" text="Tarea" />
+                                          <TreeTableColumn fx:id="part" prefWidth="572.0" text="Participantes" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </JFXTreeTableView>
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="pane1" text="Segunda Etapa">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <VBox layoutY="52.0" prefHeight="364.0" prefWidth="736.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                 <children>
+                                    <Label fx:id="obj1" prefHeight="27.0" prefWidth="1009.0" text="Objetivo de la Etapa :   " textFill="WHITE" wrapText="true">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="ini1" layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="1078.0" text="Fecha de Inicio :   " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="end1" layoutX="10.0" layoutY="27.0" prefHeight="20.0" prefWidth="1121.0" text="Fecha de Fin :   " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTreeTableView fx:id="table1" prefHeight="212.0" prefWidth="716.0">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <columns>
+                                          <TreeTableColumn fx:id="tarea1" prefWidth="75.0" text="Tarea" />
+                                          <TreeTableColumn fx:id="part1" prefWidth="75.0" text="Participantes" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </JFXTreeTableView>
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="pane11" text="Tercera Etapa">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <VBox layoutY="60.0" prefHeight="377.0" prefWidth="736.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                 <children>
+                                    <Label fx:id="obj11" prefHeight="27.0" prefWidth="1009.0" text="Objetivo de la Etapa :   " textFill="WHITE" wrapText="true">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="ini11" layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="1078.0" text="Fecha de Inicio :   " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="end11" layoutX="10.0" layoutY="27.0" prefHeight="20.0" prefWidth="1121.0" text="Fecha de Fin :   " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTreeTableView fx:id="table11" prefHeight="192.0" prefWidth="716.0">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <columns>
+                                          <TreeTableColumn fx:id="tarea11" prefWidth="75.0" text="Tarea" />
+                                          <TreeTableColumn fx:id="part11" prefWidth="75.0" text="Participantes" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </JFXTreeTableView>
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="pane111" text="Cuarta Etapa">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <VBox layoutX="14.0" layoutY="18.0" prefHeight="332.0" prefWidth="736.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="6.0">
+                                 <children>
+                                    <Label fx:id="obj111" prefHeight="27.0" prefWidth="1009.0" text="Objetivo de la Etapa :   " textFill="WHITE" wrapText="true">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="ini111" layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="1078.0" text="Fecha de Inicio :   " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="end111" layoutX="10.0" layoutY="27.0" prefHeight="20.0" prefWidth="1121.0" text="Fecha de Fin :   " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTreeTableView fx:id="table111" prefHeight="206.0" prefWidth="716.0">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <columns>
+                                          <TreeTableColumn fx:id="tarea111" prefWidth="75.0" text="Tarea" />
+                                          <TreeTableColumn fx:id="part111" prefWidth="75.0" text="Participantes" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </JFXTreeTableView>
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="pane1111" text="Quinta Etapa">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <VBox layoutY="20.0" prefHeight="330.0" prefWidth="736.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+                                 <children>
+                                    <Label fx:id="obj1111" prefHeight="27.0" prefWidth="1009.0" text="Objetivo de la Etapa :   " textFill="WHITE" wrapText="true">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="ini1111" layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="1078.0" text="Fecha de Inicio :   " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="end1111" layoutX="10.0" layoutY="27.0" prefHeight="20.0" prefWidth="1121.0" text="Fecha de Fin :    " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTreeTableView fx:id="table1111" prefHeight="208.0" prefWidth="716.0">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <columns>
+                                          <TreeTableColumn fx:id="tarea1111" prefWidth="75.0" text="Tarea" />
+                                          <TreeTableColumn fx:id="part1111" prefWidth="75.0" text="Participantes" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </JFXTreeTableView>
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="pane11111" text="Sexta Etapa">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <VBox layoutY="17.0" prefHeight="333.0" prefWidth="736.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="17.0">
+                                 <children>
+                                    <Label fx:id="obj11111" prefHeight="27.0" prefWidth="1009.0" text="Objetivo de la Etapa :    " textFill="WHITE" wrapText="true">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="ini11111" layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="1078.0" text="Fecha de Inicio :   " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="end11111" layoutX="10.0" layoutY="27.0" prefHeight="20.0" prefWidth="1121.0" text="Fecha de Fin :   " textFill="WHITE">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTreeTableView fx:id="table11111" prefHeight="216.0" prefWidth="716.0">
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <columns>
+                                          <TreeTableColumn fx:id="tarea11111" prefWidth="75.0" text="Tareas" />
+                                          <TreeTableColumn fx:id="part11111" prefWidth="75.0" text="Participantes" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </JFXTreeTableView>
+                                 </children>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+               <stylesheets>
+                  <URL value="@CSS/tabPane.css" />
+                  <URL value="@CSS/treeTableView.css" />
+               </stylesheets>
+            </JFXTabPane>
+         </center>
+         <bottom>
+            <VBox prefHeight="52.0" prefWidth="736.0" spacing="5.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label fx:id="resp" prefHeight="27.0" prefWidth="989.0" text="Responsable :   " textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="0.0" prefWidth="1000.0" spacing="100.0">
+                     <children>
+                        <JFXButton fx:id="acept" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #065325;" stylesheets="@CSS/button.css" text="Aprobar" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Double Tick_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="rechazar" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: gray;" stylesheets="@CSS/button.css" text="Rechazar" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Delete_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </VBox>
+         </bottom>
+      </BorderPane>
+      <AnchorPane fx:id="paneTitulo" maxHeight="64.0" minHeight="40.0" prefHeight="43.0" prefWidth="757.0" style="-fx-background-color: #065325; -fx-background-radius: 25 25 0 0;">
+         <children>
+            <Label layoutX="153.0" maxHeight="49.0" prefHeight="49.0" prefWidth="467.0" text="Aprobar y desaprobar Plan de Adiestramiento" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="153.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="hbox" layoutX="605.0" layoutY="3.0" maxHeight="48.0" prefHeight="33.0" prefWidth="128.0">
+               <children>
+                  <JFXButton fx:id="botonMinimizarVentana" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="14.0" layoutY="5.0" prefHeight="33.0" prefWidth="30.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Horizontal Line_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" disable="true" graphicTextGap="0.0" layoutX="51.0" layoutY="5.0" prefHeight="33.0" prefWidth="19.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Square_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="botonCerrarVentana" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="92.0" layoutY="5.0" prefHeight="33.0" prefWidth="10.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Delete_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

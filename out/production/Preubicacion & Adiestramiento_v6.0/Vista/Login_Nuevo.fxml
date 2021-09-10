@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PaneExterior" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="695.0" style="-fx-background-color: transparent; -fx-background-radius: 25px;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.Loggin_Controller">
+   <children>
+      <ImageView fitHeight="417.0" fitWidth="697.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/FotoFondoLogin.png" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="42.0" layoutY="19.0" prefHeight="362.0" prefWidth="275.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;">
+         <children>
+            <VBox fx:id="pane2" alignment="TOP_CENTER" opacity="0.0" prefHeight="362.0" prefWidth="277.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;" stylesheets="@CSS/buttonRoles.css">
+               <children>
+                  <ImageView fx:id="img2" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Imagenes/logo cujae.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow color="#2ab510" />
+                     </effect>
+                  </ImageView>
+                  <Label fx:id="bienv" alignment="CENTER" prefHeight="27.0" prefWidth="271.0" text="Bienvenido Pavel Perez Gonzalez Dios De Todos" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="75.0" layoutY="60.0" prefHeight="27.0" prefWidth="263.0" text="Seleccione su rol :" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXButton fx:id="Admin" buttonType="RAISED" disable="true" layoutX="21.0" layoutY="349.0" prefHeight="35.0" prefWidth="244.0" text="Administrador" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="VR1" buttonType="RAISED" disable="true" prefHeight="35.0" prefWidth="244.0" text="Vicerrector" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="DRH" buttonType="RAISED" disable="true" prefHeight="35.0" prefWidth="244.0" text="Director Recursos Humanos" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="ERH" buttonType="RAISED" disable="true" prefHeight="35.0" prefWidth="244.0" text="Especialista Recursos Humanos" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="JA" buttonType="RAISED" disable="true" prefHeight="35.0" prefWidth="244.0" text="Jefe de área" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="TA" buttonType="RAISED" disable="true" prefHeight="35.0" prefWidth="244.0" text="Tutor" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox fx:id="pane1" alignment="BOTTOM_CENTER" layoutX="4.0" prefHeight="361.0" prefWidth="273.0" spacing="10.0" style="-fx-background-radius: 15px; -fx-background-color: #ffffff4e;">
+               <children>
+                  <ImageView fx:id="img1" fitHeight="82.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Imagenes/logo cujae.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="15.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow color="WHITE" />
+                     </effect>
+                  </ImageView>
+                  <JFXTextField fx:id="textField_Usuario" alignment="CENTER" focusColor="WHITE" prefHeight="36.0" prefWidth="268.0" promptText="Usuario" style="-fx-border-color: white; -fx-border-radius: 50px;" stylesheets="@CSS/textField.css" unFocusColor="WHITE">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passField" alignment="CENTER" focusColor="WHITE" prefHeight="36.0" prefWidth="235.0" promptText="Contraseña" style="-fx-border-color: white; -fx-border-radius: 50px;" stylesheets="@CSS/passwordField.css" unFocusColor="WHITE">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <HBox alignment="CENTER" prefHeight="35.0" prefWidth="265.0" spacing="30.0">
+                     <children>
+                        <JFXButton fx:id="button_Entrar" buttonType="RAISED" prefHeight="40.0" prefWidth="100.0" style="-fx-border-radius: 25px; -fx-border-color: white;" text="Entrar" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="buttonSalir" buttonType="RAISED" prefHeight="40.0" prefWidth="100.0" style="-fx-border-color: white; -fx-border-radius: 25px;" text="Cancelar" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXButton fx:id="configu" alignment="CENTER" contentDisplay="CENTER" prefWidth="150.0" text="Configuracion de la App" textFill="#eaeaea" underline="true">
+                     <VBox.margin>
+                        <Insets bottom="-10.0" top="5.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="configu1" alignment="CENTER" layoutX="78.0" layoutY="347.0" prefWidth="150.0" text="Desarrolladores" textFill="#eaeaea" underline="true">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <JFXButton fx:id="botonCerrarVentana" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="635.0" layoutY="14.0" prefHeight="33.0" prefWidth="10.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/Delete_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

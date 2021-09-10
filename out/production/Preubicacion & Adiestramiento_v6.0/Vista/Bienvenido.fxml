@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="218.0" prefWidth="400.0" style="-fx-background-radius: 30px;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.Bienvenido_Controller">
+   <children>
+      <ImageView fx:id="img" fitHeight="209.0" fitWidth="329.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="45.84507751464844" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@Imagenes/cujae.png" />
+         </image>
+      </ImageView>
+      <JFXProgressBar fx:id="bar" layoutX="36.0" layoutY="203.0" opacity="0.0" prefHeight="0.0" prefWidth="329.0" />
+   </children>
+</AnchorPane>

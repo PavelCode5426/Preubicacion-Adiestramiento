@@ -1,0 +1,49 @@
+.button{
+    -fx-background-color: #065325;
+    -fx-background-radius: 15px;
+   -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color:#06974e;
+
+}
+
+.buttonLoggin{
+    -fx-border-color: #21ae32;
+    -fx-border-radius: 25px;
+    -fx-background-color: #065325;
+    -fx-background-radius: 25px
+}
+
+
+.buttonLoggin:focused{
+    -fx-background-color:  #21ae32;
+    -fx-border-color: #065325;
+    -fx-border-width: 2px;
+}
+.buttonLoggin:hover{
+    -fx-background-color:  #21ae32;
+    -fx-border-color: #065325;
+    -fx-border-width: 2px;
+}
+
+.buttonRoles{
+    -fx-background-color: #065325;
+    -fx-background-radius: 15px;
+    -fx-text-fill: white;
+    -fx-border-radius: 15px;
+    -fx-border-color:  #21ae32;
+}
+
+.buttonRoles:focused{
+    -fx-background-color:  #21ae32;
+    -fx-border-color: #065325;
+    -fx-border-width: 2px;
+}
+.buttonRoles:hover{
+    -fx-background-color:  #21ae32;
+    -fx-border-color: #065325;
+    -fx-border-width: 2px;
+}
+
+

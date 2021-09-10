@@ -1,0 +1,13 @@
+.dialog-pane{
+    -fx-background-radius: 10px;
+    -fx-border-color: gray;
+    -fx-border-radius: 10px;
+}
+.dialog-pane .header-panel{
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+.dialog-pane > .content{
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}

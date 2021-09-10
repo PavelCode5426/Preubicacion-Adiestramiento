@@ -1,0 +1,53 @@
+.jfx-combo-box{
+    -fx-prompt-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-text-fill: white;
+}
+.combo-box .arrow{
+    -fx-background-color: white;
+}
+.combo-box-base .text{
+    -fx-fill: white;
+}
+.combo-box-base .list-view .list-cell .text{
+    -fx-fill: black;
+}
+.combo-box-base .text-field{
+    -fx-text-fill: white;
+}
+.combo-box-base:focused .list-view:hover  .list-cell:hover {
+    -fx-background-color:  #065325;
+}
+
+.combo-box-base:focused .list-view:hover  .list-cell:hover .text{
+    -fx-fill: white;
+    -fx-font-size: 13px;
+}
+.jfx-combo-box,
+.jfx-combo-box:focused,
+.jfx-combo-box:editable,
+.jfx-combo-box:editable:focused{
+    -fx-text-fill: white;
+}
+.scroll-bar:vertical >.track-background, .scroll-bar:horizontal >.track-background
+{
+    -fx-background-color:transparent;
+}
+
+.scroll-bar .increment-button,  .scroll-bar .decrement-button{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-pref-height: 15px;
+    -fx-pref-width: 15px;
+}
+.scroll-bar .increment-button .increment-arrow, .scroll-bar .decrement-button .decrement-arrow{
+    -fx-background-color: transparent;
+
+}
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb{
+    -fx-background-color: gray;
+    -fx-background-radius: 15px;
+}
+.scroll-bar{
+    -fx-background-color: transparent;
+}

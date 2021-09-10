@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneExterior" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="730.0" style="-fx-background-color: #065325; -fx-background-radius: 25px;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.Ayuda_Controller">
+   <children>
+      <HBox prefHeight="442.0" prefWidth="730.0" style="-fx-background-color: #065325; -fx-background-radius: 25px;">
+         <children>
+            <AnchorPane prefHeight="442.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 25  25 0  25;">
+               <children>
+                  <JFXTreeView fx:id="treeView" layoutY="37.0" prefHeight="405.0" prefWidth="237.0" style="-fx-background-color: transparent; -fx-background-radius: 25 25 0  25;">
+                     <stylesheets>
+                        <URL value="@CSS/treeView.css" />
+                        <URL value="@CSS/scrollBar.css" />
+                     </stylesheets></JFXTreeView>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+            <AnchorPane fx:id="paneAbajo" prefHeight="442.0" prefWidth="450.0" style="-fx-background-color: white; -fx-background-radius: 25px;" stylesheets="@CSS/scrollBar.css">
+               <children>
+                  <ScrollPane fx:id="vBoxPerfil" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox prefHeight="400.0" prefWidth="491.0" spacing="10.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="264.0" text="Mi perfil" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets left="15.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Si usted desea acceder  a su información personal; cambiar su foto de perfil o su contraseña, usted debera entrar a su perfil; para eelo lo primero que deberá hacer es seleccionar en el menú 'Perfil' la opción 'Mi  perfil' como observará a continuación :" wrappingWidth="438.13671875">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="236.0" fitWidth="452.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(9).png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Una vez seleccione esta opción le aparecerá la pantalla de su perfil como se mostrará a continuación" wrappingWidth="436.13671875">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="234.0" fitWidth="439.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vbox_Asignados" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="491.0" spacing="10.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="449.0" text="Asignación de graduados" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets left="15.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Entre sus responsabilidades se encuentra la de aprobar o desaprobar la asignación de graduados a sus futuras áreas de trabajo, realizada previamente por el Director de Recursos Humanos. El sistema le ofrece toda la información que usted necesita, tanto de la cantidad de graduados por área, así como de los estudiantes que fueron asignados. Cualquiera que sea su decisión(aprobar o rechazar la asignación) influirá sobre todas las preasignaciones realizadas." wrappingWidth="438.13671875">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="214.0" fitWidth="425.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(3).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vBoxIntro" layoutY="37.0" prefHeight="405.0" prefWidth="493.0">
+                     <content>
+                        <VBox prefHeight="400.0" prefWidth="491.0" spacing="10.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="264.0" text="Qué es AdiesCom?" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets left="15.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="AdiesCom es un software desarrollado para automatizar el proceso de preubicación y adiestramiento de los recién graduados que realizan este proceso en la CUJAE" wrappingWidth="438.13671875">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vbox_PlanFam" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="401.0" prefWidth="492.0" spacing="15.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="447.0" text="Plan de Familiarización" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fx:id="text_EncabezadoPlanFam" fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Usted como vicerrector de la CUJAE tiene la responsabilidad de revisar el Plan de Familiarización que ya ha sido aprobado por el Director de Recursos Humanos y darle su aprobación o no. En su pantalla principal usted podrá observar una tabla con el registro histórico de los Planes de Familiarización realizados; si desea ver con mas detalle o revisar alguno que aún no haya revisado primero debe seleccionarlo y presionar el botón de 'Revisar Plan de Familiarización' como se muestra a continuación:" wrappingWidth="438.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="foto_PlanF_1" fitHeight="194.0" fitWidth="441.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Screenshot (171).png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="A continuación se le mostrará la ventana que le facilitará ver,aprobar o desaprobar el Plan de Familiarización seleccionado por usted anteriormente,como se mostrará en la siguiente imagen. !!Recuerde que si usted ya revisó ese plan, solo podrá verlo." wrappingWidth="438.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="foto_PlanF_2" fitHeight="194.0" fitWidth="441.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Screenshot%20(172).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vBoxReportes" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="491.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="label_TituloReporte" prefHeight="25.0" prefWidth="439.0" text="Reporte de los estudiantes con tesis aplicable a la CUJAE" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets left="15.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fx:id="text_EncabezadoReporte" fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Este reporte le permitirá tener una relación de todos los graduados que usted atiende desde su cargo, que tienen tesis aplicable a la institución. Para acceder a él solo debe seleccionar en la barra de menú la opción 'Reportes' y allí seleccionar la opción 'Estudiantes con tesis aplicable', como se mostrará a continuación:" wrappingWidth="438.13671875">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="237.0" fitWidth="422.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(3)-arreglada.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Luego se le abrirá la pantalla del reporte,  si usted desea exportar a un documento pdf deberá seleccionar la opción 'Ver documento' para visualizar como quedará el mismo, como se mostrará a continuación:" wrappingWidth="443.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="230.0" fitWidth="422.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(11)-arreglado.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vBoxNotificaciones" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox prefHeight="400.0" prefWidth="491.0" spacing="10.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="264.0" text="Notificaciones" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets left="15.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Las notificaciones deben ser revisadas contantemente, ya que en esa sección usted podría encontrar información importante como:  Recordatorios de reuniones, información sobre los planes actuales, etc; para acceder a estas lo primero que deberá hacer es seleccionar en el menú 'Perfil' la opción 'Notificaciones' como observará a continuación :" wrappingWidth="438.13671875">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="236.0" fitWidth="452.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(7)_1.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Una vez seleccione esta opción le aparecerá la pantalla de sus notificaciones como se mostrará a continuación, en ella no solo podrá observar las nuevas notificaciones sino que también puede enviar alguna a otra persona." wrappingWidth="436.13671875">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="234.0" fitWidth="439.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(8).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vBoxAsignacionDirectRH" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="491.0" spacing="10.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="443.0" text="Asignación de graduados" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets left="15.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Entre sus labores como Director de Recursos Humanos está realizar la asignación de graduados a las áreas donde realizarán su adiestramiento, para ello solo debe presionar el botón de 'Asignar graduados a área', luego debe visualizarse pantalla que se muestra a continuación:" wrappingWidth="438.13671875">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="232.0" fitWidth="421.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(12).png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota : Debe sellecionar la opción de &quot;Terminar' antes de cerrar la ventana, de lo contrario no se le guardarán sus cambios." wrappingWidth="438.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vbox_PlanFam_Especialista" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="401.0" prefWidth="492.0" spacing="15.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="447.0" text="Plan de Familiarización" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fx:id="text_EncabezadoPlanFam1" fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="A usted como Especialista de Recursos Humanos, puede serle otorgada la responsabilidad de confeccionar el Plan de Familiarización. En este caso, usted tendrá la posibilidad de gestionar los Planes de Familiarización aún no aprobados; por lo tanto podrá realizar sobre estos las operaciones de: Crear, editar o eliminar. Para realizarlas solo de be presionar el botón con la operación deseada, presente en la sección de &quot;Plan de Familiarización' en su pantalla Principal. Recuerde que si elimina un plan, será eliminado totalmente del sistema, no quedará ningún rastro de él!!" wrappingWidth="438.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Si presiona los botones 'Nuevo' o 'Editar' le aparecerá la siguiente pantalla.                                                                Nota: Si desea guardar los cambios realizados en el plan debe presionar el botón 'Terminar plan' antes de cerrar la pantalla como se mostrará a continuación: " wrappingWidth="438.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="foto_PlanF_21" fitHeight="194.0" fitWidth="441.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(13).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vBox_Estudiantes_Espec" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox prefHeight="400.0" prefWidth="491.0" spacing="10.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="264.0" text="Gestión de estudiantes:" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets left="15.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Entre las principales responsabilidades que usted tiene en su cargo, se encuentra la de gestionar los recién graduados que realizarán su servicio social en la institución.  Para facilitarle esta tarea, AdiesCom le permite realizar las operaciones de: 'Añadir', 'Editar' ,'Eliminar'  o 'Importar graduados de SECUJAE' con gran facilidad, para ello solo debe seleccionar el botón de la operación que desea realizar(podrá encontrarlos en la sección de 'Graduados sin terminar' de su pantalla principal).                                                                                         Si selecciona las operaciones de 'Nuevo' o 'Editar' le aparecerá la siguiente pantalla: " wrappingWidth="438.13671875">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="200.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(21).png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Si selecciona la opción de 'Importar graduados del SECUJAE' le aparecerá la pantalla que verá a continuación.  ¡Recuerde que debe seleccionar la opción de 'Terminar' para guardar los cambios realizados antes de cerrar la pantalla!                " wrappingWidth="436.13671875">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="234.0" fitWidth="439.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(23).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vbox_PlanFam_JefeArea" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="401.0" prefWidth="492.0" spacing="15.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="447.0" text="Plan de Familiarización:" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fx:id="text_EncabezadoPlanFam2" fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Una de sus labores en el proceso de adiestramiento que se realiza en la institución es, evaluar y dar asistencia en el Plan de Familiarización a los estudiantes previamente asignados a su área. Le facilitamos esta labor ya que en su pantalla principal podrá observar una tabla señalando con los colores: verde, naranja y rojo, el estado de la asistencia de los estudiantes; debajo de dicha tabla, podrá ver el botón 'Evaluar Plan de Familiarización' para acceder a dicha operación." wrappingWidth="438.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="foto_PlanF_11" fitHeight="194.0" fitWidth="441.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(18).png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Si selecciona el botón antes mencionado, le aparecerá la siguiente pantalla, que presenta una información detallada de las actividades del Plan de Familiarización en que se encuentra el estudiante, además otorgar asistencia se resuelve solo con un click." wrappingWidth="438.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="foto_PlanF_22" fitHeight="194.0" fitWidth="441.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(19).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vbox_PlanForm_Jefe" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="401.0" prefWidth="492.0" spacing="15.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="447.0" text="Plan de Adiestramiento:" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fx:id="text_EncabezadoPlanFam21" fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Una de sus labores en el proceso de adiestramiento que se realiza en la institución es, aprobar o rechazar el Plan de Adiestramiento de los estudiantes previamente asignados a su área. Le facilitamos esta labor ya que en su pantalla principal podrá observar una tabla señalando con los colores: verde, naranja y rojo, el estado del Plan de Adiestramiento de los estudiantes; debajo de dicha tabla, podrá ver el botón 'Revisar Plan de Adiestramiento' para acceder a dicha operación." wrappingWidth="438.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="foto_PlanF_111" fitHeight="194.0" fitWidth="441.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(17).png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Si selecciona el botón antes mencionado, le aparecerá la siguiente pantalla, que presenta una información detallada de las actividades del Plan de Familiarización en que se encuentra el estudiante, además aprobar o rechazar el plan se resuelve solo con un click." wrappingWidth="438.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="foto_PlanF_221" fitHeight="194.0" fitWidth="441.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(16).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vbox_PlanForm_Tuto" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="401.0" prefWidth="492.0" spacing="15.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="447.0" text="Plan de Adiestramiento:" textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fx:id="text_EncabezadoPlanFam211" fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Como tutor, su principal función en el proceso de adiestramiento es confeccionar el Plan de Adiestramiento de los graduados de su área(imagen de la izquierda) que usted elija como tutorados, ya que una vez usted confeccione un plan de adiestramiento asume el graduado como su tutorado.  Además podrá editar o eliminar planes de adiestramiento que aún no han sido aprobados(imagen de la derecha). " wrappingWidth="438.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="foto_PlanF_1111" fitHeight="212.0" fitWidth="409.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/planadiestTuto.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Si presiona los botones 'Nuevo' o 'Editar' le aparecerá la siguiente pantalla.                                                                Nota: Si desea guardar los cambios realizados en el plan debe presionar el botón 'Terminar plan' antes de cerrar la pantalla como se mostrará a continuación: " wrappingWidth="438.13671875">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="foto_PlanF_2211" fitHeight="194.0" fitWidth="441.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(14).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane fx:id="vBoxEvaluacion" layoutX="0.0" layoutY="37.0" prefHeight="405.0" prefWidth="493.0" visible="false">
+                     <content>
+                        <VBox prefHeight="400.0" prefWidth="491.0" spacing="10.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="264.0" text="Evaluación de tareas: " textFill="#686868">
+                                 <VBox.margin>
+                                    <Insets left="15.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="#686868" strokeType="OUTSIDE" strokeWidth="0.0" text="Luego de haber confeccionado el Plan de Adiestramiento, y que este haya sido aprobado, a medida que el adiestrado vaya cumpliendo o no las tareas asignadas, estas deben ser evaluadas; para ello en su pantalla principal hay una sección en la que se realiza fácilmente esta acción; como se muestra a continuación:" wrappingWidth="438.13671875">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="237.0" fitWidth="442.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@Imagenes/Captura%20de%20pantalla%20(20).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="paneTitulo" layoutX="-1.0" prefHeight="42.0" prefWidth="730.0" style="-fx-background-color: #065325; -fx-border-color: white; -fx-border-radius: 25 25 0 0; -fx-background-radius: 25 25 0 0;">
+         <children>
+            <Label layoutX="300.0" layoutY="5.0" prefHeight="30.0" prefWidth="96.0" text="Ayuda" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <HBox fx:id="hbox" layoutX="578.0" layoutY="5.0" prefHeight="31.0" prefWidth="114.0">
+               <children>
+                  <JFXButton fx:id="botonMinimizarVentana" contentDisplay="GRAPHIC_ONLY">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Horizontal%20Line_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" disable="true">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Square_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="botonCerrarVentana" contentDisplay="GRAPHIC_ONLY">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Delete_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

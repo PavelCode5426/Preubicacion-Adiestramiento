@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneExterior" prefHeight="135.0" prefWidth="393.0" style="-fx-background-radius: 10px; -fx-background-color: transparent;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="135.0" prefWidth="392.0" style="-fx-background-radius: 10px; -fx-background-color: white; -fx-border-color: gray; -fx-border-radius: 10px;">
+         <children>
+            <HBox fx:id="titlePane" prefHeight="43.0" prefWidth="392.0" style="-fx-background-radius: 10  10 0  0; -fx-background-color: #065325;">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Imagenes/Box%20Important_White_50px.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="titulo" prefHeight="28.0" prefWidth="268.0" text="Titulo" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="20.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="contentPane" prefHeight="57.0" prefWidth="392.0">
+               <children>
+                  <Text fx:id="mensaje" fill="#3c3434" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="294.13671875">
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="38.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@Imagenes/Ask%20Question_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox fx:id="buttonPane" prefHeight="37.0" prefWidth="392.0" spacing="20.0">
+               <children>
+                  <JFXButton fx:id="botonAceptar" buttonType="RAISED" defaultButton="true" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #065325; -fx-background-radius: 10px;" text="Aceptar" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="230.0" top="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="botonCancelar" buttonType="RAISED" cancelButton="true" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: #065325; -fx-background-radius: 10px;" text="Cancelar" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

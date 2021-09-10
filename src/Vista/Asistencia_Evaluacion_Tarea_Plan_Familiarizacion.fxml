@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="PaneExterior" prefHeight="630.0" prefWidth="966.0" style="-fx-background-radius: 25px;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.Asistencia_Evaluar_Plan_Familiarizacion">
+   <children>
+      <ImageView fitHeight="620.0" fitWidth="985.0" layoutY="11.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/Entrada_Principal_de_la_CUJAE_Photoshop-Recuperado.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="paneTitulo" maxHeight="77.0" minHeight="39.0" prefHeight="39.0" prefWidth="977.0" style="-fx-background-color: #065325; -fx-background-radius: 25 25 0 0;">
+         <children>
+            <Label layoutX="196.0" maxHeight="49.0" prefHeight="39.0" prefWidth="502.0" text="Asistencia y evaluación del Plan de Familiarización" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="196.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="hbox" layoutX="825.0" layoutY="1.0" maxHeight="48.0" prefHeight="38.0" prefWidth="115.0">
+               <children>
+                  <JFXButton fx:id="botonMinimizarVentana" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="14.0" layoutY="5.0" prefHeight="33.0" prefWidth="30.0" stylesheets="@../../../Proyecto%20actual/Ultima%20actualizacion/ProyectoBD/src/Vista/CSS/prueba.css">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Horizontal%20Line_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" disable="true" graphicTextGap="0.0" layoutX="51.0" layoutY="5.0" prefHeight="33.0" prefWidth="19.0" stylesheets="@../../../Proyecto%20actual/Ultima%20actualizacion/ProyectoBD/src/Vista/CSS/prueba.css">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Square_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="botonCerrarVentana" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="92.0" layoutY="5.0" prefHeight="33.0" prefWidth="10.0" stylesheets="@../../../Proyecto%20actual/Ultima%20actualizacion/ProyectoBD/src/Vista/CSS/prueba.css">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Delete_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="16.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="950.0" style="-fx-background-color: #ffffff4e; -fx-background-radius: 15px;">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label fx:id="nom_label" prefHeight="17.0" prefWidth="670.0" text="Nombre del Estudiante : " textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="nota_cb" disable="true" labelFloat="true" prefHeight="30.0" prefWidth="310.0" promptText="Nota del Plan de Familiarizacion" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <JFXTreeTableView fx:id="table" prefHeight="487.0" prefWidth="980.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+               <columns>
+                  <TreeTableColumn fx:id="colum_nombre" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="200.0" text="Nombre de la Actividad" />
+                  <TreeTableColumn fx:id="colum_resp" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="200.0" text="Responsable" />
+                  <TreeTableColumn maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="75.0" text="Sitio de la Actividad">
+                     <columns>
+                        <TreeTableColumn fx:id="colum_lugar" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="150.0" text="Lugar" />
+                        <TreeTableColumn fx:id="colum_date" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="75.0" text="Fecha" />
+                        <TreeTableColumn fx:id="colum_time" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="75.0" text="Hora" />
+                     </columns>
+                  </TreeTableColumn>
+                  <TreeTableColumn fx:id="colum_desc" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="152.0" text="Descripcion" />
+                  <TreeTableColumn fx:id="colum_asist" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="77.0" text="Asistencia" />
+               </columns>
+            </JFXTreeTableView>
+            <Label fx:id="label_porciento" prefHeight="19.0" prefWidth="285.0" text="Porciento de Inasistencia :" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" spacing="100.0">
+               <children>
+                  <JFXButton fx:id="acept" buttonType="RAISED" contentDisplay="RIGHT" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: #065325;" text="Aceptar" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Ok_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="cancel" buttonType="RAISED" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: gray;" text="Cancelar" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Imagenes/Delete_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <stylesheets>
+            <URL value="@CSS/treeTableView.css" />
+            <URL value="@CSS/button.css" />
+            <URL value="@CSS/comboBox.css" />
+         </stylesheets>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+   </children>
+</AnchorPane>
